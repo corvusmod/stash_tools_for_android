@@ -7,4 +7,4 @@ echo $PRO_NAME_TEMP > /tmp/pro_temp
 sed s:\/:_:g /tmp/pro_temp > /tmp/pro_bueno
 PRO_NAME=`cat /tmp/pro_bueno`
 cp $CONFIG_PATH  /tmp/$CONFIG_PATH.bk
-sed s:REPONAME:$PRO_NAME: /tmp/$CONFIG_PATH.bk > $CONFIG_PATH
+sed s:REPONAME:$PRO_NAME.git: /tmp/$CONFIG_PATH.bk > $CONFIG_PATH
